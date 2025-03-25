@@ -77,6 +77,8 @@ bool	RPN::calculate(std::string::iterator &it) {
 		case '/':
 			if (num1 == 0)
 				throw std::runtime_error("Division by zero");
+			if (num2 == INT_MIN && num1 == -1)
+				throw std::runtime_error("Division overflow");
 			numStack.push(num2 / num1);
 			break;
 	}
