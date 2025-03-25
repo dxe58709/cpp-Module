@@ -5,6 +5,7 @@
 #include <deque>
 #include <iostream>
 #include <algorithm>
+#include <cstring>
 #include <cerrno>
 #include <iomanip>
 #include <ctime>
